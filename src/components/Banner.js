@@ -66,7 +66,7 @@ const Banner = () => {
               style={{fontSize:25}} >
               Hi, I'm Ayush, a passionate software developer with a strong
               knack for turning ideas into functional and efficient software
-              solutions. With 1 years of experience in the field, I
+              solutions. With 2 years of experience in the field, I
               possess a deep understanding of the software development lifecycle
               and a solid foundation in various programming languages and
               frameworks. My journey as a software developer has allowed me to
@@ -88,20 +88,21 @@ const Banner = () => {
               </a>
             </motion.div>
             <motion.div
-              variants={fadeIn("up", 0.7)}
+              variants={fadeIn("down", 0.7)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20] gap-x-6 max-w-max mx-auto lg:mx-0"
+            
             >
               <a href="https://www.youtube.com/@TechAyushSaxena">
-                <FaYoutube style={{width:40,height:40}} />
+                <FaYoutube style={{width:30,height:30}} />
               </a>
               <a href="https://github.com/AyushSaxena092000">
-                <FaGithub style={{width:40,height:40}}/>
+                <FaGithub style={{width:30,height:30}}/>
               </a>
               <a href="https://www.linkedin.com/in/ayush-saxena-8730a521a/">
-                <FaLinkedinIn style={{width:40,height:40}}/>
+                <FaLinkedinIn style={{width:30,height:30}}/>
               </a>
             </motion.div>
           </div>

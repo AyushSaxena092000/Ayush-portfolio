@@ -25,6 +25,7 @@ module.exports = {
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/Ayushlogoabout.jpeg')",
+        
         // services: "url('./assets/ayushservice2.png')",
       },
     },
