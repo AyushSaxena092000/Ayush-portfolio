@@ -79,14 +79,14 @@ const Contact = () => {
               <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide lg:text-[30px]">
                 Get in touch:-
               </h4>
-              <h2 className="text-[50px] lg:text-[40px] leading-none mb-1">
+              <h2 className="text-[50px] lg:text-[40px] leading-none mb-2 text-xl ">
                 Let's connect and make some digital magic happen! Reach out to
                 me, and together, we'll turn ideas into reality.
               </h2>
             </div>
           </motion.div>
           <motion.form
-            style={{ marginLeft: 30 }}
+            style={{ marginLeft: 5, marginTop:40 }}
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}

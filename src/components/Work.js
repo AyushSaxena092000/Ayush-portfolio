@@ -1,12 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-// import Img1 from "../assets/portfolio-img1.png";
 import ImgAy from '../assets/reactnativedevelopment.webp'
 import ImgAy2 from '../assets/reactdevelopment.webp';
 import ImgAy3 from '../assets/uiuxdevelopment.webp';
-// import Img2 from "../assets/portfolio-img2.png";
-// import Img3 from "../assets/portfolio-img3.png";
 import { Link } from "react-scroll";
 
 const Work = () => {
@@ -18,28 +15,28 @@ const Work = () => {
     window.open(gitURL);
   };
   return (
-    <section className="section" id="work">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-10">
+    <section className="py-8 md:py-16 lg:py-24" id="work">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-4 mb-8 lg:mb-0"
           >
             <div>
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br />
                 Work.
               </h2>
-              <p className="max-w-sm mb-16" style={{fontSize:30}}>
+              <p className="max-w-sm mb-8 lg:mb-16">
                 Our latest projects in ReactJS and React Native are like engines
                 of progress, driving forward the evolution of web and mobile
                 applications, raising the bar for user experience and setting
                 new standards of excellence.
               </p>
-              <Link>
+              <Link to="work">
                 <button className="btn btn-sm" onClick={handleGitURL}>
                   View all projects
                 </button>
@@ -51,10 +48,9 @@ const Work = () => {
                 className="group-hover:scale-125 transition-all duration-500"
                 src={ImgAy2}
                 alt=""
-                
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">React JS</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">React JS</span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">Dynamic Web Pages</span>
@@ -66,7 +62,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-10"
+            className="flex-1 flex flex-col gap-y-4"
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
@@ -76,7 +72,7 @@ const Work = () => {
                 alt=""
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">React-Native</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">React-Native</span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">Mobile Applications</span>
@@ -90,7 +86,7 @@ const Work = () => {
                 alt=""
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">UI/UX Design</span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">WebMob Designs</span>

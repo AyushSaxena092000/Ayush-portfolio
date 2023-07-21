@@ -27,29 +27,29 @@ const services = [
     description:
       "As a Node.js developer, I have the power of JavaScript on the server-side to build scalable, efficient, and high-performance applications. With Node.js, I can, manipulate data, interact with databases, and create robust APIs.",
     link: "Know more",
-  },
+  }
 ];
+
 const Services = () => {
   return (
-    <section className="section" id="services">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+    <section className="py-8 md:py-16 lg:py-24" id="services">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-10 lg:gap-y-0">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-200"
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-6 md:mb-0 lg:mb-0 lg:pr-10 xl:pr-20"
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
+            <h3 className="h3 max-w-[455px] mb-10 lg:mb-16">
               Keep calm and let the developer handle it. They have a special
               skill of turning chaos into code.
             </h3>
 
             <h1
-              className="h2 max-w-[455px] mb-16  text-gradient text-sm"
-              style={{ fontSize: 20 }}
+              className="h2 max-w-[455px] mb-6  text-gradient text-xs md:text-sm lg:text-lg"
             >
               "Eat, Sleep, Code, Repeat"
             </h1>
@@ -74,7 +74,7 @@ const Services = () => {
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-tight">
+                      <p className="font-secondary leading-tight text-xs md:text-sm lg:text-base">
                         {description}
                       </p>
                     </div>
@@ -85,7 +85,7 @@ const Services = () => {
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="https://github.com/AyushSaxena092000?tab=repositories" className="text-gradient text-sm">
+                      <a href="https://github.com/AyushSaxena092000?tab=repositories" className="text-gradient text-xs md:text-sm">
                         {link}
                       </a>
                     </div>
