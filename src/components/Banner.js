@@ -108,7 +108,7 @@ const Banner = () => {
             className="flex-1 max-w-[320px] mx-auto lg:mx-0"
           >
             <img
-              style={{ borderRadius: 300, width: '90%', marginTop: 20 }}
+              style={{ borderRadius: 300, width: '90%', marginTop: 20, margin:8 }}
               src={Image}
               alt=""
             />
