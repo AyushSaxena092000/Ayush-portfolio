@@ -15,15 +15,18 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-    setEmailValid(emailRegex.test(email));
-
-    setForm({
-      ...form,
+    const { name, value } = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
       [name]: value,
-    });
+    }));
+  };
+  
+  const handleEmailBlur = (e) => {
+    const { value } = e.target;
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    const isValidEmail = emailRegex.test(value);
+    setEmailValid(isValidEmail);
   };
 
 
@@ -34,7 +37,7 @@ const Contact = () => {
 
     emailjs
     .send(
-      'service_z068fa9',
+      'service_y8tusbg',
       'template_w4dug38',
       {
         from_name: form.name,
@@ -46,10 +49,11 @@ const Contact = () => {
       'DUByFhMOx8YVtZrgi'
     )
     .then(
-      () => {
+      (response) => {
+        console.log('Email sent successfully:', response);
         setLoading(false);
         alert("Thank you. I will get back to you as soon as possible.");
-
+  
         setForm({
           name: "",
           email: "",
@@ -57,12 +61,12 @@ const Contact = () => {
         });
       },
       (error) => {
+        console.error('Email sending failed:', error);
         setLoading(false);
-        console.error(error);
-
         alert("Ahh, something went wrong. Please try again.");
       }
     );
+  
   };
   return (
     <section className="py-16 lg:section" id="contact">
@@ -108,6 +112,7 @@ const Contact = () => {
              name="email"
              value={form.email}
              onChange={handleChange}
+             onBlur={handleEmailBlur}
              placeholder="What's your web address?"
              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
             
