@@ -83,7 +83,7 @@ const Services = () => {
                         href="#"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
-                        <BsArrowUpRight />
+                        ↗
                       </a>
                       <a href="https://github.com/AyushSaxena092000?tab=repositories" className="text-gradient text-xs md:text-sm">
                         {link}

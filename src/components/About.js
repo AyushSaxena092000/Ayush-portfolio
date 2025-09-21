@@ -40,21 +40,21 @@ const About = () => {
               I am a learner, Who is learning The chapter of life.
             </h3>
             <p className="mb-6 text-base md:text-lg">
-              Hello, I'm Ayush Saxena, an experienced frontend developer
-              specializing in ReactJS, React Native, and other cutting-edge
-              technologies. With a strong passion for crafting exceptional user
-              interfaces, I excel at creating seamless experiences across
-              multiple platforms. My expertise extends to HTML5, CSS3,
-              JavaScript, and integrating frontend applications with RESTful
-              APIs. I thrive in dynamic environments and bring adaptability,
-              clean coding practices, and a drive for continuous learning to
-              every project. Let's collaborate to deliver outstanding digital
-              solutions.
+              Hello, I'm Ayush Saxena, a Full-Stack Developer with 4 years of
+              experience building scalable web and mobile applications using
+              React.js, React Native, Next.js, and Node.js. I specialize in
+              creating seamless user experiences, integrating backend services,
+              and delivering end-to-end solutions with clean, maintainable code.
+              My expertise spans frontend and backend development, API
+              integrations, and performance optimization. I thrive on solving
+              challenging problems, adapting to new technologies, and
+              continuously improving applications to exceed expectations. Let's
+              collaborate to turn ideas into impactful digital products.
             </p>
             <div className="flex gap-x-6 md:gap-x-10 mb-6 md:mb-12">
               <div>
                 <div className="text-[24px] md:text-[30px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={8} /> : null}
+                  {inView ? <CountUp start={0} end={4} duration={8} /> : null}
                 </div>
                 <div className="font-primary text-xs md:text-sm tracking-[1.5px]">
                   Years of <br />
@@ -63,7 +63,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[24px] md:text-[30px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={100} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={50} duration={3} /> : null}
                   +
                 </div>
                 <div className="font-primary text-xs md:text-sm tracking-[1.5px]">
@@ -82,7 +82,9 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-4 md:gap-x-8 items-center">
-              <button className="btn btn-lg" onClick={handleWhatsAppLink}>Contact me</button>
+              <button className="btn btn-lg" onClick={handleWhatsAppLink}>
+                Contact me
+              </button>
               <a href="#" className="text-gradient btn-link text-xs md:text-sm">
                 For More Enquiry Please Contact Me On This.
               </a>

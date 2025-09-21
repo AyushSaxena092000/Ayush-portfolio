@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import ImgAy from '../assets/reactnativedevelopment.webp'
-import ImgAy2 from '../assets/reactdevelopment.webp';
-import ImgAy3 from '../assets/uiuxdevelopment.webp';
+import ImgAy from "../assets/reactnativedevelopment.webp";
+import ImgAy2 from "../assets/reactdevelopment.webp";
+import ImgAy3 from "../assets/uiuxdevelopment.webp";
 import { Link } from "react-scroll";
 
 const Work = () => {
@@ -30,11 +30,16 @@ const Work = () => {
                 My Latest <br />
                 Work.
               </h2>
-              <p className="max-w-sm mb-8 lg:mb-16">
-                Our latest projects in ReactJS and React Native are like engines
-                of progress, driving forward the evolution of web and mobile
-                applications, raising the bar for user experience and setting
-                new standards of excellence.
+              <p className="max-w-md mb-8 lg:mb-12">
+                Explore my recent full-stack projects built with React.js, React
+                Native, Next.js, and Node.js. These projects demonstrate
+                scalable web and mobile applications with responsive designs,
+                seamless user experiences, and robust backend architecture. I
+                focus on clean, maintainable code, API integrations, performance
+                optimization, and modern development practices. Each project
+                reflects my ability to deliver end-to-end solutions that solve
+                real-world problems and drive measurable results for users and
+                clients.
               </p>
               <Link to="work">
                 <button className="btn btn-sm" onClick={handleGitURL}>
@@ -50,7 +55,9 @@ const Work = () => {
                 alt=""
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient text-xs md:text-sm lg:text-base">React JS</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">
+                  React JS
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">Dynamic Web Pages</span>
@@ -72,7 +79,9 @@ const Work = () => {
                 alt=""
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient text-xs md:text-sm lg:text-base">React-Native</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">
+                  React-Native
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">Mobile Applications</span>
@@ -86,7 +95,9 @@ const Work = () => {
                 alt=""
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient text-xs md:text-sm lg:text-base">UI/UX Design</span>
+                <span className="text-gradient text-xs md:text-sm lg:text-base">
+                  UI/UX Design
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-3xl text-white">WebMob Designs</span>
